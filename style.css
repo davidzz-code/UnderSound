@@ -7,7 +7,9 @@
 /* Header y menú en la nav bar */
 
 header{
-    border: 1px solid black;
+    box-shadow: 5px 5px 30px black;
+    background-color: white;
+    z-index: 10;
     position: fixed;
     top: 0;
     left: 0;
@@ -34,13 +36,10 @@ ul{
 
 nav a{
     text-decoration: none;
-    color: black;
 }
 
 nav .list li a{
-
-    background-color: black;
-    color: white;
+    color: black;
     padding: 10px 15px;
     display: block;
 }
@@ -50,18 +49,22 @@ nav .list > li{
 }
 
 nav .list li a:hover{
-    background-color: #434343;
+    transition: 0.2s;
+    border-bottom: 2px solid red;
     cursor: pointer;
 }
 
 nav .sublist{
     display: none;
+    background-color: white;
     position: absolute;
 }
 
 nav .list li:hover > .sublist{
     display: block;
 }
+
+
 
 /* Estilos de la sección ciudades */
 
@@ -73,17 +76,36 @@ nav .list li:hover > .sublist{
     justify-content: center;
 }
 
+.cities-flexbox img + p{
+    color: white;
+    text-shadow: 4px 4px 8px #333; /* No estoy seguro de que esté haciendo algo */
+    position: absolute;
+    font-size: 4rem;
+    top: 390px;
+    right: 510px;
+    transition: transform 0.5s ease;
+    transform: translateX(-50%) rotate(-90deg); /* Rotamos el texto 90 grados */
+    transform-origin: center center; /* Especificamos el origen de la rotación en el centro */
+    transition: transform 0.5s ease; /* Añadimos transición para la rotación */
+}
+
+.cities-flexbox img:hover + p {
+    transform: translateX(10%) rotate(-90deg);  /* Movemos y rotamos el texto al hacer hover*/
+}
+
 .cities-flexbox{
     display: flex;
     width: 800px;
     height: 530px;
+    position: relative;
+    /* overflow: hidden;   PREGUNTAR AL CHAT PARA QUE SIRVE*/
 }
 
 .cities-flexbox img{
     width: 0;
     flex-grow: 1;
     object-fit: cover;
-    opacity: 0.7;
+    opacity: 0.5;
     transition: 0.5s;
 }
 
@@ -92,13 +114,12 @@ nav .list li:hover > .sublist{
     width: 150px;
     opacity: 1;
     filter: contrast(100%);
+} 
 
+.monthly-artist{
+    background-color: beige;
+    padding: 500px;
 }
-/* 
-.container{
-    margin-top: 100px;
-    margin-left: 30px;
-} */
 
 
 img{
