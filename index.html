@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
 
+<!-- Metadatos de la página web -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css">
-    <title>Título</title>
+    <title>UnderSound</title>
 </head>
 
 <body>
+    <!-- Menú header fijo de la página  -->
     <header>
         <div class="logo">
-            <h2>LOGO</h2>
+            <h2><a href="index.html">UnderSound</a></h2>
         </div>
         <nav>
+            <!-- Menú principal  -->
             <ul class="list">
-                <li><a href="#">Historias</a></li>
+                <li><a href="./galeria.html">Galería</a></li>
                 <li><a href="#">Ciudades</a>
+
+                    <!-- Submenú de las ciudades  -->
                     <ul class="sublist">
                         <li><a href="#">Madrid</a></li>
                         <li><a href="#">Barcelona</a></li>
@@ -32,7 +37,10 @@
             </ul>
         </nav>
     </header>
+
+    <!-- Contenedor de todo el body de la página -->
     <section class="container">
+
         <!-- Galería de imágenes de las ciudades -->
         <section class="cities">
             <div class="cities-flexbox">
@@ -58,33 +66,96 @@
         </section>
 
 
-        <!-- Artistas destacatos del mes -->
+        <!-- Sección artistas destacatos del mes -->
         <section class="monthly-artist">
-            <h2 class="featured__title">Artistas destacados del mes</h2>
+            <h1>Artistas del mes</h1>
 
-            <!-- 
-            <div class="artist">
-                <img src="./resources/artists/Guitarra-3.jpg" alt="Foto guitarrista">
-                <h2 class="artist-name">Nombre músico</h2>
-                <p>Lorem ipsum klndsfkfnsdfnifne erc eknvneirn ineri nfeinf vcner ncvienrcenrpinv
-                    epincpenrcpvenrcirnekrncvkenrvcpnervcnpn n perncvp nknkll </p>
-            </div>
+            <div class="artist-flexbox">
+                <div class="artist">
+                    <div class="vertical">
+                        <img src="./resources/artists/Duo.jpg" alt="Foto percusionista">
+                    </div>
+                    <h2>Nombre músico</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dictum volutpat justo feugiat
+                        lobortis. Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed feugiat magna, vel ultrices
+                        sapien. Cras
+                        mollis
+                        rhoncus bibendum. Fusce nec imperdiet augue. Curabitur elementum ex vel facilisis tincidunt. In
+                        ullamcorper</p>
+                </div>
 
-            <div class="artist">
-                <img src="./resources/artists/Percu-2.jpg" alt="Foto percusionista">
-                <h2>Nombre músico</h2>
-                <p>Lorem ipsum klndsfkfnsdfnifne erc eknvneirn ineri nfeinf vcner ncvienrcenrpi
-                    epincpenrcpvenrcirnekrncvkenrvcpnervcnpn n perncvp nknkll </p>
-            </div>
+                <div class="artist">
+                    <div class="vertical">
+                        <img src="./resources/artists/Percu-2.jpg" alt="Foto percusionista">
+                    </div>
+                    <h2>Nombre músico</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dictum volutpat justo feugiat
+                        lobortis. Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed feugiat magna, vel ultrices
+                        sapien. Cras
+                        mollis
+                        rhoncus bibendum. Fusce nec imperdiet augue. Curabitur elementum ex vel facilisis tincidunt. In
+                        ullamcorper.</p>
+                </div>
 
-            <div class="artist">
-                <img src="./resources/artists/Guitarra-armonica.jpg"
-                    alt="Foto guitarrista con armónica">
-                <h2>Nombre músico</h2>
-                <p>Lorem ipsum klndsfkfnsdfnifne erc eknvneirn ineri nfeinf vcner ncvienrcenrpi
-                    epincpenrcpvenrcirnekrncvkenrvcpnervcnpn n perncvp nknkll </p>
+                <div class="artist">
+                    <div class="horizontal">
+                        <img src="./resources/artists/Guitarra-armonica.jpg">
+                    </div>
+                    <h2>Nombre músico</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dictum volutpat justo feugiat
+                        lobortis. Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed feugiat magna, vel ultrices
+                        sapien. Cras
+                        mollis
+                        rhoncus bibendum. Fusce nec imperdiet augue. Curabitur elementum ex vel facilisis tincidunt. In
+                        ullamcorper</p>
+                </div>
+
+                <div class="artist">
+                    <div class="vertical">
+                        <img src="./resources/artists/Guitarra-2.jpg" alt="Foto percusionista">
+                    </div>
+                    <h2>Nombre músico</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dictum volutpat justo feugiat
+                        lobortis. Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed feugiat magna, vel ultrices
+                        sapien. Cras
+                        mollis
+                        rhoncus bibendum. Fusce nec imperdiet augue. Curabitur elementum ex vel facilisis tincidunt. In
+                        ullamcorper</p>
+                </div>
+
+                <div class="artist">
+                    <div class="vertical">
+                        <img src="./resources/artists/Trompeta.jpg" alt="Foto percusionista">
+                    </div>
+                    <h2>Nombre músico</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dictum volutpat justo feugiat
+                        lobortis. Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed feugiat magna, vel ultrices
+                        sapien. Cras
+                        mollis
+                        rhoncus bibendum. Fusce nec imperdiet augue. Curabitur elementum ex vel facilisis tincidunt. In
+                        ullamcorper.</p>
+                </div>
+
+                <div class="artist">
+                    <div class="vertical">
+                        <img src="./resources/artists/Acordeon.jpg">
+                    </div>
+                    <h2>Nombre músico</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dictum volutpat justo feugiat
+                        lobortis. Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed feugiat magna, vel ultrices
+                        sapien. Cras
+                        mollis
+                        rhoncus bibendum. Fusce nec imperdiet augue. Curabitur elementum ex vel facilisis tincidunt. In
+                        ullamcorper</p>
+                </div>
+                
             </div>
-            -->
         </section>
     </section>
 

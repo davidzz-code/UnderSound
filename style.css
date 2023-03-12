@@ -4,11 +4,14 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* Header y menú en la nav bar */
 
 header{
-    box-shadow: 5px 5px 30px black;
-    background-color: white;
+    background-color: black;
     z-index: 10;
     position: fixed;
     top: 0;
@@ -19,6 +22,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    color: white;
 }
 
 header .logo:hover{
@@ -27,21 +31,27 @@ header .logo:hover{
     cursor: pointer;
 }
 
+header a{
+    text-decoration: none;
+    color: white;
+}
+
 
 /* Estilos de la lista en el header */
 
-ul{
+nav ul{
     list-style: none;
 }
 
 nav a{
     text-decoration: none;
+    color: white;
 }
 
 nav .list li a{
-    color: black;
     padding: 10px 15px;
     display: block;
+
 }
 
 nav .list > li{
@@ -49,14 +59,13 @@ nav .list > li{
 }
 
 nav .list li a:hover{
-    transition: 0.2s;
     border-bottom: 2px solid red;
     cursor: pointer;
 }
 
 nav .sublist{
     display: none;
-    background-color: white;
+    background-color: black;
     position: absolute;
 }
 
@@ -116,14 +125,66 @@ nav .list li:hover > .sublist{
     filter: contrast(100%);
 } 
 
+
+/* Sección artista del mes */
 .monthly-artist{
-    background-color: beige;
-    padding: 500px;
+    background-color: #feffec;
+    padding-bottom: 500px;
 }
 
-
-img{
-    width: 200px;
-    height: auto;
+.monthly-artist h1{
+    font-family: sans-serif;
+    border-bottom: 2px solid black;
+    text-align: center;
+    margin-left: 400px;
+    margin-right: 400px;
+    padding: 40px;
+    padding-bottom: 20px;
+    font-size: 4em;
 }
 
+/* Cajas flexbox para organizar el contenido de las fotos y su descripción */
+.artist-flexbox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 50px;
+    margin-top: 100px;
+}
+
+.artist-flexbox .artist{
+    display: flex;
+    width: 400px;
+    height: 600px;
+    margin-bottom: 100px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.artist-flexbox p{
+    margin: 0;
+    display: block;
+    margin: 20px;
+    text-align: justify;
+    font-size: 1.1em;
+}
+
+.artist-flexbox h2{
+    text-align: center;
+}
+
+.artist-flexbox img{
+    margin: 10px;
+}
+
+.artist-flexbox .horizontal img{
+    margin-bottom: 60px;
+    width: auto; 
+    height: 270px;
+}
+
+.artist-flexbox .vertical img{
+    width: auto; 
+    height: 370px;
+}
