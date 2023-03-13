@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="main.css" type="text/css">
     <title>UnderSound</title>
 </head>
 
@@ -14,7 +14,7 @@
     <!-- Menú header fijo de la página  -->
     <header>
         <div class="logo">
-            <h2><a href="index.html">UnderSound</a></h2>
+            <h2><a href="main.html">UnderSound</a></h2>
         </div>
         <nav>
             <!-- Menú principal  -->
@@ -32,17 +32,17 @@
                         <li><a href="#">Salamanca</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Eventos</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="events.html">Eventos</a></li>
+                <li><a href="./about.html">About</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Contenedor de todo el body de la página -->
-    <section class="container">
+    <section class="container__main">
 
         <!-- Galería de imágenes de las ciudades -->
-        <section class="cities">
+        <section class="container__cities">
             <div class="cities-flexbox">
                 <img src="https://images.unsplash.com/photo-1603540356709-815bf17ff427?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=652&q=80"
                     alt="Imagen de Madrid">
@@ -67,14 +67,12 @@
 
 
         <!-- Sección artistas destacatos del mes -->
-        <section class="monthly-artist">
+        <section class="container__monthly-artist">
             <h1>Artistas del mes</h1>
 
             <div class="artist-flexbox">
                 <div class="artist">
-                    <div class="vertical">
-                        <img src="./resources/artists/Duo.jpg" alt="Foto percusionista">
-                    </div>
+                    <img class="vertical" src="./resources/artists/Duo.jpg" alt="Foto percusionista">
                     <h2>Nombre músico</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dictum volutpat justo feugiat
                         lobortis. Lorem
@@ -86,9 +84,7 @@
                 </div>
 
                 <div class="artist">
-                    <div class="vertical">
-                        <img src="./resources/artists/Percu-2.jpg" alt="Foto percusionista">
-                    </div>
+                    <img class="vertical" src="./resources/artists/Percu-2.jpg" alt="Foto percusionista">
                     <h2>Nombre músico</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dictum volutpat justo feugiat
                         lobortis. Lorem
@@ -100,9 +96,7 @@
                 </div>
 
                 <div class="artist">
-                    <div class="horizontal">
-                        <img src="./resources/artists/Guitarra-armonica.jpg">
-                    </div>
+                    <img class="horizontal" src="./resources/artists/Guitarra-armonica.jpg">
                     <h2>Nombre músico</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dictum volutpat justo feugiat
                         lobortis. Lorem
@@ -114,9 +108,7 @@
                 </div>
 
                 <div class="artist">
-                    <div class="vertical">
-                        <img src="./resources/artists/Guitarra-2.jpg" alt="Foto percusionista">
-                    </div>
+                    <img class="vertical" src="./resources/artists/Guitarra-2.jpg" alt="Foto percusionista">
                     <h2>Nombre músico</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dictum volutpat justo feugiat
                         lobortis. Lorem
@@ -128,9 +120,7 @@
                 </div>
 
                 <div class="artist">
-                    <div class="vertical">
-                        <img src="./resources/artists/Trompeta.jpg" alt="Foto percusionista">
-                    </div>
+                    <img class="vertical" src="./resources/artists/Trompeta.jpg" alt="Foto percusionista">
                     <h2>Nombre músico</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dictum volutpat justo feugiat
                         lobortis. Lorem
@@ -142,9 +132,7 @@
                 </div>
 
                 <div class="artist">
-                    <div class="vertical">
-                        <img src="./resources/artists/Violin-3.jpg">
-                    </div>
+                    <img class="vertical" src="./resources/artists/Violin-3.jpg">
                     <h2>Nombre músico</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dictum volutpat justo feugiat
                         lobortis. Lorem
@@ -156,7 +144,7 @@
                 </div>
             </div>
         </section>
-        <section class="footer">
+        <section class="container__footer">
             <h1>FOOTER</h1>
         </section>
     </section>

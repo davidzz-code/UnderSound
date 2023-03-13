@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Sección "sobre nosotros" */
+
+.container__about{
+    margin-top: 70px;
+}
+
+.container__about > h1{
+    padding: 30px;
+    text-align: center;
+}
+
+.about-flexbox{
+    height: 625px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about{
+    width: 500px;
+    text-align: justify;
+}
+
+.about-flexbox img{
+    width: 400px;
+    height: auto;
+}
+
+
+/* Caja de formulario */
+
+.container__form{
+    display: flex;
+    height: 730px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+.container__form .form{
+    width: 700px;
+    height: 600px;
+    color: white;
+}
+
+.form .form-title{
+    text-align: center;
+    padding: 60px;
+}
+
+.form .inputs{
+    display: flex;
+    height: 79%;
+    justify-content: center;
+    width: 100%;
+}
+
+.form .inputs .name, .surname, .email{
+    background-color: black;
+    margin-top: 100px;
+    padding-bottom: 7px;
+    padding-left: 5px;
+    border: none;
+    outline: none;
+    font-size: 1.2em;
+    border-bottom: 1.5px solid rgb(127, 0, 0);
+}
+
+.form .inputs .surname{
+    margin-left: 50px;
+}
+
+.form .inputs .email, .submit{
+    margin-top: 150px;
+}
+
+.form .inputs .name, .email{
+    margin-right: 50px;
+}
+
+.form .inputs input[type="text"], input[type="email"] {
+    color: white;
+}
+
+.submit{
+    margin-left: 100px;
+    padding: 20px;
+}
+
+.submit {
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.81);
+    padding: 0.7em 2em;
+    border: 3px solid #950101;
+    border-radius: 2px;
+    position: relative;
+    box-shadow: 0 2px 10px #950101, 0 3px 6px rgba(0, 0, 0, 0.1);
+    color: #950101;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+}
+
+.submit:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #950101;
+    z-index: -1;
+}
+
+.submit:hover, .submit:focus {
+    color: white;
+    background-color: #950101;
+    cursor: pointer;
+}
+
+.submit:hover:before, .submit:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+
+.submit:active {
+    transform: scale(0.9);
+}
+
+/* Caja de contacto */
+
+.container__form .contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 600px;
+    color: white;
+}
+
+.contact .contact-title{
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.contact .contact-title h1{
+    display: inline;
+}
+
+.contact .contact-info{
+    width: 60%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.contact .contact-info p{
+    display: inline;
+    margin-top: 15px;
+
+}
+
+
+

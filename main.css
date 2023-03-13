@@ -8,6 +8,18 @@ html{
     scroll-behavior: smooth;
 }
 
+p, article{
+    font-size: 1.2em;
+}
+
+h1{
+    font-size: 2.5em;
+}
+
+h2{
+    font-size: 2em;
+}
+
 /* Header y menú en la nav bar */
 
 header{
@@ -26,8 +38,9 @@ header{
 }
 
 header .logo:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: all 0.3s;
+    border-bottom: 2px solid #950101;
     cursor: pointer;
 }
 
@@ -59,7 +72,7 @@ nav .list > li{
 }
 
 nav .list li a:hover{
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #950101;
     cursor: pointer;
 }
 
@@ -77,7 +90,7 @@ nav .list li:hover > .sublist{
 
 /* Estilos de la sección ciudades */
 
-.cities{
+.container__cities{
     background-color: black;
     margin-top: 70px;
     padding: 50px;
@@ -127,14 +140,14 @@ nav .list li:hover > .sublist{
 
 
 /* Sección artista del mes */
-.monthly-artist{
+.container__monthly-artist{
     background-color: #feffec;
     padding-bottom: 100px;
 }
 
-.monthly-artist h1{
+.container__monthly-artist h1{
     font-family: sans-serif;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #9B0000;
     text-align: center;
     margin-left: 400px;
     margin-right: 400px;
@@ -178,21 +191,25 @@ nav .list li:hover > .sublist{
     margin: 10px;
 }
 
-.artist-flexbox .horizontal img{
-    margin-bottom: 60px;
+.horizontal{
+
     width: auto; 
     height: 270px;
 }
 
-.artist-flexbox .vertical img{
+.vertical{
     width: auto; 
     height: 370px;
+}
+
+.artist-flexbox .horizontal{
+    margin-bottom: 70px;
 }
 
 
 /* Estilos del footer */
 
-.footer{
+.container__footer{
     background-color: black;
     padding: 100px;
     color: white;
