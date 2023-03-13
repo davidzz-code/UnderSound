@@ -1,0 +1,49 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Sección "Eventos" */
+
+.container__events{
+    margin-top: 70px;
+    height: 730px;
+}
+
+.container__events > h1{
+    padding: 30px;
+    text-align: center;
+}
+
+.container__events .table-flexbox{
+    height: 630px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table-flexbox table{
+    width: 50%;
+    border-collapse: collapse;
+    text-align: left;
+    background-color: white;
+    font-size: 1.3em;
+}
+
+th, td{
+    padding: 15px;
+    border-right: 1px solid black;
+}
+
+thead{
+    background-color: #950101;
+    border-bottom: 5px solid #5f0000;
+    color: white;
+}
+
+tr:nth-child(even){
+    background-color: #cdcdcd;
+}
