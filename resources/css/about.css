@@ -10,7 +10,7 @@ label {
     font-family: 'Josefin Sans', sans-serif;
 }
 
-/* Sección "sobre nosotros" */
+/* Sección "about" */
 
 .container__about {
     margin-top: 70px;
@@ -39,6 +39,7 @@ label {
     height: auto;
 }
 
+/* Animación opacidad */
 @keyframes opacidad {
     from{
         opacity: 0;
@@ -217,7 +218,7 @@ textarea {
 
 }
 
-
+/* Media queries para diseño responsive */
 @media (max-width: 768px) {
     .about-flexbox {
         flex-direction: column;

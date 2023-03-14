@@ -1,3 +1,4 @@
+/* Estilos generales de la página */
 *{
     margin: 0;
     padding: 0;
@@ -15,6 +16,7 @@ html{
     animation-duration: 1s;
 }
 
+/* Animación opacidad */
 @keyframes opacidad {
     from{
         opacity: 0;
@@ -25,6 +27,7 @@ html{
     
 }
 
+/* Estilos de las imágenes y galería por filas y columnas */
 img{
     width: 100%;
 }

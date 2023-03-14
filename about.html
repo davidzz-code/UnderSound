@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css" type="text/css">
-    <link rel="stylesheet" href="about.css" type="text/css">
+    <link rel="stylesheet" href="./resources/css/main.css"" type=" text/css">
+    <link rel="stylesheet" href="./resources/css/about.css" type="text/css">
     <title>UnderSound</title>
 </head>
 
@@ -20,7 +20,7 @@
             <!-- Menú principal  -->
             <ul class="list">
                 <li><a href="./galeria.html">Galería</a></li>
-                <li><a href="#">Ciudades</a>
+                <li><a href="main.html">Ciudades</a>
 
                     <!-- Submenú de las ciudades  -->
                     <ul class="sublist">
@@ -33,31 +33,34 @@
                     </ul>
                 </li>
                 <li><a href="events.html">Eventos</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="about.html">About</a></li>
             </ul>
         </nav>
     </header>
+
+    <!-- Sección contenedora del about -->
     <section class="container__about">
         <h1>About</h1>
         <div class="about-flexbox">
             <article class="about">
+                UnderSound es una página web pensada para dar voz y valorar a los músicos callejeros. A través de
+                esta página web se puede conocer sus historias, sus ciudades y su música. La página "Eventos" organiza
+                una tabla de los eventos y fiestas populares en las que los músicos callejeros estarán tocando.
+                Esta página web acerca al público a esos músicos a los que muchas veces no se les valora como
+                merecen.</br>
+                </br>
                 Lorem ipsum dolor sit amet consectetur adipiscing elit, cum arcu magnis blandit potenti purus primis
                 sollicitudin, ac montes platea porttitor nisl vitae. Diam vel aliquam gravida malesuada torquent
                 maecenas mollis, rutrum feugiat cubilia mattis lectus cum volutpat aliquet, dui risus sagittis vivamus
                 ullamcorper nulla. Hendrerit montes bibendum senectus vulputate fames aptent nec pharetra habitasse
                 varius non placerat lacus aliquam, quis etiam lacinia ornare quisque arcu hac vitae curabitur accumsan
-                commodo malesuada.</br>
-                </br>
-                Imperdiet vivamus sodales in lectus tempor at inceptos id, libero parturient sem hac nam nostra
-                volutpat, ac dui morbi eleifend mauris est penatibus. Sociosqu tellus risus magnis ornare vehicula
-                sapien vitae consequat arcu faucibus, integer tortor volutpat dis ante libero penatibus aenean. Lacinia
-                cras quis iaculis vulputate fames nam mus scelerisque risus diam, auctor pellentesque aliquet lectus
-                conubia ac morbi eros pharetra, penatibus porta mattis nec donec condimentum cubilia eget libero
+                commodo malesuada.
             </article>
 
             <img class="vertical" src="./resources/artists/Duo.jpg" alt="Foto random para el about">
         </div>
 
+        <!-- Sección contenedora del formulario y los datos de contacto -->
         <div class="container__form">
             <div class="form">
                 <div class="form-title">
@@ -68,7 +71,8 @@
                         <!-- Nombre, apellido y el email -->
                         <input class="name" type="text" name="name" id="name" placeholder="Nombre" required>
                         <input class="email" type="email" name="email" id="email" placeholder="Email" required><br>
-                        <textarea class="mensaje" id="mensaje" name="mensaje" pattern="+[0-9]{2}[0-9]{9}" placeholder="Mensaje" required></textarea>
+                        <textarea class="mensaje" id="mensaje" name="mensaje" pattern="+[0-9]{2}[0-9]{9}"
+                            placeholder="Mensaje" required></textarea>
 
                         <!-- Botones "radio" de selección -->
                         <div class="radio">
@@ -91,12 +95,15 @@
                     <h1>¡Contáctanos!</h1>
                 </div>
                 <div class="contact-info">
-                    <p>Email: asdad</p>
-                    <p>Teléfono: asdad</p>
-                    <p>Dirección: asdad</p>
+                    <p>Email: hola@gmail.com</p>
+                    <p>Teléfono: 123 123 123</p>
+                    <p>Dirección: Calle Ejemplo, nº31</p>
                 </div>
             </div>
         </div>
+        <section class="container__footer">
+            <h1>FOOTER</h1>
+        </section>
     </section>
 </body>
 
