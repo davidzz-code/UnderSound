@@ -4,12 +4,25 @@
     box-sizing: border-box;
 }
 
+
 html{
     scroll-behavior: smooth;
 }
 
 .galeria{
     margin-top: 70px;
+    animation: opacidad;
+    animation-duration: 1s;
+}
+
+@keyframes opacidad {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    
 }
 
 img{

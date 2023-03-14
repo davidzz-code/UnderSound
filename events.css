@@ -10,6 +10,17 @@
 .container__events{
     margin-top: 70px;
     height: 730px;
+    animation: opacidad;
+    animation-duration: 1s;   
+}
+
+@keyframes opacidad {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 .container__events > h1{
@@ -46,4 +57,9 @@ thead{
 
 tr:nth-child(even){
     background-color: #cdcdcd;
+}
+
+tr:hover{
+    background-color: rgb(123, 37, 37);
+    color: white;
 }

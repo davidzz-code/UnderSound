@@ -1,28 +1,39 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;600&family=Poppins:wght@500&family=Roboto+Slab&family=Rubik:wght@300;600&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-p, article{
-    font-size: 1.2em;
+p,
+article,
+li {
+    font-size: 1.1em;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
-h1{
+h1 {
     font-size: 2.5em;
+    font-family: 'Roboto Slab', sans-serif;
 }
 
-h2{
+h2 {
     font-size: 2em;
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+.cities-flexbox p {
+    font-family: 'Roboto Slab', sans-serif;
 }
 
 /* Header y menú en la nav bar */
 
-header{
+header {
     background-color: black;
     z-index: 10;
     position: fixed;
@@ -37,14 +48,14 @@ header{
     color: white;
 }
 
-header .logo:hover{
+header .logo:hover {
     transform: scale(1.1);
     transition: all 0.3s;
     border-bottom: 2px solid #950101;
     cursor: pointer;
 }
 
-header a{
+header a {
     text-decoration: none;
     color: white;
 }
@@ -52,37 +63,37 @@ header a{
 
 /* Estilos de la lista en el header */
 
-nav ul{
+nav ul {
     list-style: none;
 }
 
-nav a{
+nav a {
     text-decoration: none;
     color: white;
 }
 
-nav .list li a{
+nav .list li a {
     padding: 10px 15px;
     display: block;
 
 }
 
-nav .list > li{
+nav .list>li {
     float: left;
 }
 
-nav .list li a:hover{
+nav .list li a:hover {
     border-bottom: 2px solid #950101;
     cursor: pointer;
 }
 
-nav .sublist{
+nav .sublist {
     display: none;
     background-color: black;
     position: absolute;
 }
 
-nav .list li:hover > .sublist{
+nav .list li:hover>.sublist {
     display: block;
 }
 
@@ -90,7 +101,7 @@ nav .list li:hover > .sublist{
 
 /* Estilos de la sección ciudades */
 
-.container__cities{
+.container__cities {
     background-color: black;
     margin-top: 70px;
     padding: 50px;
@@ -98,32 +109,57 @@ nav .list li:hover > .sublist{
     justify-content: center;
 }
 
-.cities-flexbox img + p{
+
+
+
+/* MADRID */
+.cities-flexbox img+.madrid {
     color: white;
-    text-shadow: 4px 4px 8px #333; /* No estoy seguro de que esté haciendo algo */
+    text-shadow: 4px 4px 8px #333;
     position: absolute;
-    font-size: 4rem;
+    font-size: 3.5rem;
     top: 390px;
     right: 510px;
+    transform: translateX(-50%) rotate(-90deg);
+    transform-origin: center center;
     transition: transform 0.5s ease;
-    transform: translateX(-50%) rotate(-90deg); /* Rotamos el texto 90 grados */
-    transform-origin: center center; /* Especificamos el origen de la rotación en el centro */
-    transition: transform 0.5s ease; /* Añadimos transición para la rotación */
 }
 
-.cities-flexbox img:hover + p {
-    transform: translateX(10%) rotate(-90deg);  /* Movemos y rotamos el texto al hacer hover*/
+.cities-flexbox img:hover+.madrid {
+    transform: translateX(10%) rotate(-90deg);
+
+
 }
 
-.cities-flexbox{
+/* BARCELONA 
+.cities-flexbox img+.barcelona {
+    color: white;
+    text-shadow: 4px 4px 8px #333;
+    position: absolute;
+    font-size: 4rem;
+    top: 330px;
+    right: 270px;
+    transform: translateX(-50%) rotate(-90deg);
+    transform-origin: center center;
+    transition: transform 0.5s ease;
+}
+
+.cities-flexbox img:hover > .barcelona {
+    transform: translateX(10%) rotate(-90deg);
+    /* Movemos y rotamos el texto al hacer hover
+
+} */
+
+.cities-flexbox {
     display: flex;
     width: 800px;
     height: 530px;
     position: relative;
-    /* overflow: hidden;   PREGUNTAR AL CHAT PARA QUE SIRVE*/
+    overflow: hidden;
+    /*PREGUNTAR AL CHAT PARA QUE SIRVE*/
 }
 
-.cities-flexbox img{
+.cities-flexbox img {
     width: 0;
     flex-grow: 1;
     object-fit: cover;
@@ -131,22 +167,21 @@ nav .list li:hover > .sublist{
     transition: 0.5s;
 }
 
-.cities-flexbox img:hover{
+.cities-flexbox img:hover {
     cursor: pointer;
     width: 150px;
     opacity: 1;
     filter: contrast(100%);
-} 
+}
 
 
 /* Sección artista del mes */
-.container__monthly-artist{
-    background-color: #feffec;
+.container__monthly-artist {
+
     padding-bottom: 100px;
 }
 
-.container__monthly-artist h1{
-    font-family: sans-serif;
+.container__monthly-artist h1 {
     border-bottom: 2px solid #9B0000;
     text-align: center;
     margin-left: 400px;
@@ -157,7 +192,7 @@ nav .list li:hover > .sublist{
 }
 
 /* Cajas flexbox para organizar el contenido de las fotos y su descripción */
-.artist-flexbox{
+.artist-flexbox {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -165,7 +200,7 @@ nav .list li:hover > .sublist{
     margin-top: 100px;
 }
 
-.artist-flexbox .artist{
+.artist-flexbox .artist {
     display: flex;
     width: 400px;
     height: 600px;
@@ -173,9 +208,18 @@ nav .list li:hover > .sublist{
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    object-fit: cover;
+    transition: 0.5s;
+
 }
 
-.artist-flexbox p{
+.artist-flexbox .artist:hover {
+    cursor: crosshair;
+    margin: 10px;
+
+}
+
+.artist-flexbox p {
     margin: 0;
     display: block;
     margin: 20px;
@@ -183,35 +227,51 @@ nav .list li:hover > .sublist{
     font-size: 1.1em;
 }
 
-.artist-flexbox h2{
+.artist-flexbox h2 {
     text-align: center;
 }
 
-.artist-flexbox img{
+.artist-flexbox img {
     margin: 10px;
 }
 
-.horizontal{
+.horizontal {
 
-    width: auto; 
+    width: auto;
     height: 270px;
 }
 
-.vertical{
-    width: auto; 
+.vertical {
+    width: auto;
     height: 370px;
 }
 
-.artist-flexbox .horizontal{
+.artist-flexbox .horizontal {
     margin-bottom: 70px;
 }
 
 
 /* Estilos del footer */
 
-.container__footer{
+.container__footer {
     background-color: black;
     padding: 100px;
     color: white;
     text-align: center;
+}
+
+@media (max-width: 760px) {
+
+    .container__cities{
+        
+    }
+    
+    /* Sección artista del mes */
+    .container__monthly-artist h1 {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 2.5em;
+        padding: 20px;
+        text-align: center;
+    }
 }

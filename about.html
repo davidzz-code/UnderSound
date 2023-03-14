@@ -67,11 +67,21 @@
                     <form action="#" method="post">
                         <!-- Nombre, apellido y el email -->
                         <input class="name" type="text" name="name" id="name" placeholder="Nombre" required>
-                        <input class="surname" type="text" name="surname" id="surname" placeholder="Apellido" required><br>
-                        <input class="email" type="email" name="email" id="email" placeholder="Email" required>
+                        <input class="email" type="email" name="email" id="email" placeholder="Email" required><br>
+                        <textarea class="mensaje" id="mensaje" name="mensaje" pattern="+[0-9]{2}[0-9]{9}" placeholder="Mensaje" required></textarea>
+
+                        <!-- Botones "radio" de selección -->
+                        <div class="radio">
+                            <label for="answer">¿Tocas un instrumento?</label><br><br>
+                            <input type="radio" name="answer" id="answerYes" value="si">
+                            <label for="answerYes">Sí</label>
+                            <input type="radio" name="answer" id="answerNo" value="no">
+                            <label for="answerNo">No</label>
+                        </div><br>
 
                         <!-- Botón de submit -->
-                        <input class="submit" name="submit" type="submit" value="Enviar">
+                        <input class="button submit" name="submit" type="submit" value="Enviar">
+                        <input class="button reset" name="reset" type="reset" value="Restablecer">
                     </form>
                 </div>
             </div>
