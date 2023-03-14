@@ -1,2 +1,4 @@
-# Street-music
-A personal web project for street musicians
+# UnderSound
+A personal web project
+
+UnderSound is a hypothetical web page for street musicians and their stories
